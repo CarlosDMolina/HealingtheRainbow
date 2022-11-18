@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Chloe;
+    src: url(./fonts/Chloe-Regular.otf);
+}
+
+@font-face {
+    font-family: Thunder;
+    src: url(./fonts/Thunder-BoldLC.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(./fonts/impact.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    /* color palette */
+    --dark-gold: #c2892c;
+    --khaki: #efd27f;
+    --light-blue: #9cd6d3;
+    --blue: #4dbad4;
+    --maroon: #a55f6e;
+    --offwhite: #fbf6ef;
+    --black: #211608;
+    --tan: #ebd0ad;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Text', Chloe, Thunder,'Ubuntu', 'Cormorant Garamond', serif, sans-serif;
+    min-height: 100%;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+@keyframes beating {
+    0%, 18%, 30%, 55%, 100%{
+        transform: scale(1);
+    }
+    25%, 40% {
+        transform: scale(1.15);
+    }
+}
