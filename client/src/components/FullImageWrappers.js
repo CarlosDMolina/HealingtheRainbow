@@ -62,9 +62,9 @@ margin-bottom: 6vh;
   margin-bottom: 2vw;
 }
 
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
   margin-bottom: 2vh;
-}
+} */
 `
 
 const Icon = styled.img`
