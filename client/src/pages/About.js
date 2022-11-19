@@ -298,7 +298,6 @@ const Icon = styled.img`
 
 const HeadingContent = styled.div`
   position: relative;
-  //z-index: 10;
   display: block;
   overflow: hidden;
   flex-direction: row;
@@ -485,7 +484,6 @@ transition: all 0.5s linear;
 
 const ThreeDWrapper = styled.div`
   position: relative;
- // z-index: 12;
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -735,13 +733,13 @@ const ParagraphWrapper = styled.div`
   grid-column-end: 3;`};
 }
 
-@media (max-width: 479px) {
-  padding: 2.5vh 10px 0vh 10px;
-}
-
 @media (max-width:992px) and (orientation: landscape){
   align-items: center;
   padding: 6vh 30px 0vh 30px;
+}
+
+@media (max-width: 479px) {
+  padding: 2.5vh 10px 0vh 10px;
 }
 `
 
@@ -1019,7 +1017,6 @@ const WrapImage = styled.div`
   width: 14rem;
   height: 7rem;
   margin-right: 30px;
-  //margin-bottom: -0.1em;
   margin-left: 30px;
   border-radius: 100px;
 
@@ -1113,5 +1110,4 @@ align-self: center;
   grid-column-start: 1;
   grid-column-end: 4;
 }
-
 `
