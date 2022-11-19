@@ -45,14 +45,10 @@ text-align: left;
 max-width: 50ch;
 margin-bottom: 6vh;
 
-
-@media (max-width: 1200px){
-  margin-bottom: 2vh;
-}
-
-@media (max-width: 992px){
-  font-size: 1.25rem;
+@media (max-width: 479px) {
   max-width: 90%;
+  font-size: 14px;
+  margin-bottom: 4vh;
 }
 
 @media (max-width: 992px) and (orientation: landscape) {
@@ -60,10 +56,13 @@ margin-bottom: 6vh;
   margin-bottom: 2vw;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 992px){
+  font-size: 1.25rem;
   max-width: 90%;
-  font-size: 14px;
-  margin-bottom: 4vh;
+}
+
+@media (max-width: 1200px){
+  margin-bottom: 2vh;
 }
 `
 
