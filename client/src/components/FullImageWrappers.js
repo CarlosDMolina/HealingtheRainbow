@@ -51,14 +51,15 @@ margin-bottom: 6vh;
   margin-bottom: 4vh;
 }
 
-@media (max-width: 992px) and (orientation: landscape) {
+/* @media (max-width: 992px) and (orientation: landscape) {
   font-size: 14px;
   margin-bottom: 2vw;
-}
+} */
 
 @media (max-width: 992px){
-  font-size: 1.25rem;
+  font-size: 14px;
   max-width: 90%;
+  margin-bottom: 2vw;
 }
 
 @media (max-width: 1200px){
