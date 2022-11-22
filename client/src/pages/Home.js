@@ -187,7 +187,7 @@ function Home() {
        <FullImageWrappers />
       </Section>
       <Section dark>
-        <OverflowWrapper mediumpadding>
+        <OverflowWrapper mediumpadding='true'>
           <TickerGrid>
             <FlexTicker first>
               <HeadingXLarge style={{x}}>
@@ -195,7 +195,7 @@ function Home() {
               </HeadingXLarge>
             </FlexTicker>
             <FlexTicker second>
-              <HeadingXLarge textColor='var(--blue)' style={{translateX}}>
+              <HeadingXLarge textcolor='var(--blue)' style={{translateX}}>
                 turning history into her-story
               </HeadingXLarge>
             </FlexTicker>
@@ -339,7 +339,7 @@ const HeadingXLarge = styled(motion.div)`
   display: block;
   margin-top: 0px;
   font-family: Thunder;
-  color: ${props => props.textColor ? `${props.textColor}` : 'var(--khaki)'};
+  color: ${props => props.textcolor ? `${props.textcolor}` : 'var(--khaki)'};
   font-size: 24.5vw;
   line-height: 0.8;
   font-weight: 700;
@@ -383,7 +383,6 @@ ${props => props.second ?
 @media (max-width: 479px){
   padding-left: 5px;
 }
-
 `
 
 const TickerGrid = styled.div`
@@ -445,7 +444,7 @@ const OverflowWrapper = styled(motion.div)`
   grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 2;
-  ${props => props.mediumpadding ? `padding: 120px 0px;` : null};
+  ${props => props.mediumpadding === 'true' ? `padding: 120px 0px;` : null};
 
   @media (max-width: 992px){
   grid-column-start: 1;
@@ -621,7 +620,7 @@ const HLPage = styled(HeadingLarge)`
   transform-origin: 0% 0%;
   font-family: Thunder;
   font-size: 17vw;
-  line-height: 0.65;
+  line-height: 0.75;
   font-weight: 700;
 `
 const InnerPaddingLarge = styled(MainGrid)`

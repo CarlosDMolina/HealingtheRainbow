@@ -375,7 +375,7 @@ const ContactForm = styled.div`
       border: 2px solid transparent;
       transition: border 0.3s ease;
 
-      @media (max-width: 992px) and (min-width: 480px) {
+      @media (max-width: 992px) and (min-width: 768px) {
         width: 75%;
       }
 
@@ -408,7 +408,7 @@ const ContactForm = styled.div`
       border: 2px solid transparent;
       transition: border 0.3s ease;
 
-      @media (max-width: 992px) and (min-width: 480px) {
+      @media (max-width: 992px) and (min-width: 768px) {
         width: 75%;
       }
 
@@ -589,22 +589,21 @@ const ContactWrapper = styled(ContentWrapper)`
   grid-column-end: 11;
 
   @media (max-width: 992px){
-  margin-bottom: 6vh;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;   
   }
 
-  @media (max-width: 992px) and (orientation: landscape) {
-    margin-bottom: 12vh;
-  }
-
   @media (max-width: 479px){
     margin-bottom: 12vh;
   }
 
+  @media (max-width: 992px) and (orientation: landscape) {
+    margin-bottom: 12vh;
+  }
 
+  @media (max-width: 992px){ margin-bottom: 6vh; }
 `
 
 const PaddingBottomMedium = styled(ContentWrapper)`

@@ -108,7 +108,7 @@ function About() {
               <CoverImage src={Lagirl} />
             </Rotate>
             <Back style={{ rotateZ, x, y}}>
-              <CoverImage src='https://images.unsplash.com/photo-1594850598343-a5b0a83c237d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2732&q=80' />
+              <CoverImage src='./images/concretecolors.jpg' />
             </Back>
           </ContentWrapper>
           <ParagraphWrapper>
@@ -116,7 +116,7 @@ function About() {
               Tap into your inner magic
             </HeadingLarge>
           </ParagraphWrapper>
-          <ParagraphWrapper second>
+          <ParagraphWrapper second='true'>
             <MediumParagraph>
             HTR was created to help women tap back into who they are at their spiritual center and reconnect to the feminine essence of their being. Helping them to align themselves spiritually and heal themselves emotionally and physically. We are spiritual beings having a physical experience, so we have the power to shape our lives however we desire. But many of us live our lives from a script that we’ve allowed others to write. We are playing the understudies instead of being the leading ladies we can be and taking center stage. We envy women or compare ourselves to others thinking “what does she have that I don’t” or “I wish I were more like her” when the truth is not one of us has anything different than the other and we are more alike than we know. The difference is identifying, understanding, and breaking free of what is blocking you from releasing your inner magic.
             </MediumParagraph>
@@ -133,7 +133,7 @@ function About() {
                     Your new genesis awaits
                   </HeadingLarge>
                 </PaddingTopMedium>
-                <ContentWrapper second>
+                <ContentWrapper second='true'>
                   <MediumParagraph>
                   HTR helps women to tap into their purpose, live empowered, and live authentically with our signature program series “Welcome to Your New Genesis”. Your New Genesis takes a holistic view of our client's mind, soul, and body awareness. Trauma can be emotional or physical. Although our experience may be a distant memory and we “feel” as if we have gotten past it, our subconscious mind and our bodies never forget unless they are reprogrammed.
                   </MediumParagraph>
@@ -158,12 +158,12 @@ function About() {
             rotateZ: -5,
           }} transition={{ ease: [0.165, 0.84, 0.44, 1], duration: 4, delay: 0.2 }} viewport={{ once: true, amount: 0.3}}>
             <ImageWrapper>
-              <CoverImage src='https://images.unsplash.com/photo-1515191107209-c28698631303?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80' />
+              <CoverImage src='./images/fist.jpg' />
             </ImageWrapper>
           </RotateTen>
           <Rotate15 initial={{ x: "-10vw" , y: "10vh", rotateZ: -15 }} whileInView={{ x: '0vw', y: '0vh' , rotateZ: 5 }} transition={{ ease: [0.165, 0.84, 0.44, 1], duration: 4 }} viewport={{  once: true, amount: 0.3 }}>
             <Outline>
-              <CoverImage src='https://images.unsplash.com/photo-1446511437394-36cdff3ae1b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' />
+              <CoverImage src='./images/think.jpg' />
             </Outline>
           </Rotate15>
         </CenterGrid>
@@ -711,7 +711,7 @@ const ParagraphWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  ${props => props.second ? `grid-row-start: 2;
+  ${props => props.second === 'true' ? `grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 7;
   grid-column-end: 12;
@@ -733,13 +733,13 @@ const ParagraphWrapper = styled.div`
   grid-column-end: 3;`};
 }
 
+@media (max-width: 479px) {
+  padding: 2.5vh 10px 0vh 10px;
+}
+
 @media (max-width:992px) and (orientation: landscape){
   align-items: center;
   padding: 6vh 30px 0vh 30px;
-}
-
-@media (max-width: 479px) {
-  padding: 2.5vh 10px 0vh 10px;
 }
 `
 
@@ -814,7 +814,7 @@ const ContentWrapper = styled(motion.div)`
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  ${props => props.second ? 
+  ${props => props.second === 'true' ? 
   `grid-column-end: 7;
   grid-column-start: 1;
   grid-row-end: 3;

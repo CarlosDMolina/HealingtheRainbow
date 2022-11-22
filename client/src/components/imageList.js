@@ -21,7 +21,7 @@ export const imageList = [
     },
     {
         heading: "~ C. Thomas",
-        image: "https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2322&q=80",
+        image: "./images/kids.jpg",
         paragraph: "Shafiah you've done a lot for me. You have uplifted not just me but others in the community. You've helped me to see what was missing in my life was God and believing in myself. Spiritually you showed me how to believe for me to heal and stay strong not just for me but for my son. You also helped inspire me to be strong enough for me to tell people how I feel so they'll stop taking advantage of me. I also believe you've inspired the kids at the Women's Leadership summer program. You also help where you can and help everyone to see that they are important. You have done an excellent job taking the reins of the Women's Leadership Program."
     }
 ];
