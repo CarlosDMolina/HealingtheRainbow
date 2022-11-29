@@ -5,7 +5,7 @@ function Shop() {
   return (
     <>
       <Section>
-
+        
       </Section>
     </>
   )
