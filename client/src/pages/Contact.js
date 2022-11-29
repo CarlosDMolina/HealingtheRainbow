@@ -78,13 +78,13 @@ function Contact() {
           <SocialWrapper>
             <ListWrapper>
               <HeadingXSmall>social</HeadingXSmall>
-              <ListLink href='https://www.instagram.com/healing_the_rainbow'>
+              <ListLink href='https://www.instagram.com/healing_the_rainbow' target='_blank'>
                 <HeadingSmall>Instagram</HeadingSmall>
               </ListLink>
-              <ListLink href='https://www.facebook.com/healingtherainbowinyou'>
+              <ListLink href='https://www.facebook.com/healingtherainbowinyou' target='_blank'>
                 <HeadingSmall>Facebook</HeadingSmall>
               </ListLink>
-              <ListLink href='https://www.youtube.com/channel/UCZPig5QNaGO-Ri-5Knbq8GQ'>
+              <ListLink href='https://www.youtube.com/channel/UCZPig5QNaGO-Ri-5Knbq8GQ' target='_blank'>
                 <HeadingSmall>YouTube</HeadingSmall>
               </ListLink>
             </ListWrapper>

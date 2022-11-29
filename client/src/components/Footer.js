@@ -73,19 +73,19 @@ function Footer({color, dark}) {
                   </CopyrightWrapper>
                   <SocialsWrapper>
                     <Grid>
-                      <SocialLinks href='https://www.instagram.com/healing_the_rainbow'>
+                      <SocialLinks href='https://www.instagram.com/healing_the_rainbow' target='_blank'>
                         {dark ?  
                         <Icon src={instaDark}/> : 
                         <Icon src={insta}/>
                         }
                       </SocialLinks>
-                      <SocialLinks href='https://www.facebook.com/healingtherainbowinyou'>
+                      <SocialLinks href='https://www.facebook.com/healingtherainbowinyou' target='_blank'>
                         {dark ?
                         <Icon src={facebookDark}/> : 
                         <Icon src={facebook}/>
                         }
                       </SocialLinks>
-                      <SocialLinks href='https://www.youtube.com/channel/UCZPig5QNaGO-Ri-5Knbq8GQ'>
+                      <SocialLinks href='https://www.youtube.com/channel/UCZPig5QNaGO-Ri-5Knbq8GQ' target='_blank'>
                         {dark ?
                         <Icon src={youtubeDark} /> : 
                         <Icon src={youtube}/>
