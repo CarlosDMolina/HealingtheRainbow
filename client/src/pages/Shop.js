@@ -56,6 +56,10 @@ height: 50vh;
 @media (max-width: 992px) and (orientation: landscape){
   height: 75vh;    
 }
+
+@media (max-width: 479px){
+  width: 90vw;
+}
 `
 
 const Section = styled.section`
