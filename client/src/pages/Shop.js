@@ -55,7 +55,8 @@ height: 50vh;
 width: 50vh;
 
 @media (max-width: 992px) and (orientation: landscape){
-  height: 75vh;    
+  height: 75vh;
+  width: 75vh;    
 }
 
 @media (max-width: 479px){
