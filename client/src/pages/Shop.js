@@ -60,7 +60,7 @@ width: 50vh;
 }
 
 @media (max-width: 479px){
-  width: 90vw;
+  width: 50vh;
 }
 `
 
